@@ -2,7 +2,9 @@ package pojo;
 
 import java.util.List;
 
-public class AddPlace {
+public class
+
+AddPlace {
 
     private int accuracy;
 

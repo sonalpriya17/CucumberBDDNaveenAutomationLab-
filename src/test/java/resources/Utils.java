@@ -1,5 +1,7 @@
 package resources;
 
+import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
+import com.sun.codemodel.JCodeModel;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
@@ -7,8 +9,19 @@ import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import org.jsonschema2pojo.*;
+import org.jsonschema2pojo.rules.RuleFactory;
+import org.jsonschema2pojo.DefaultGenerationConfig;
+import org.jsonschema2pojo.GenerationConfig;
+import org.jsonschema2pojo.Jackson2Annotator;
+import org.jsonschema2pojo.SchemaGenerator;
+import org.jsonschema2pojo.SchemaMapper;
+import org.jsonschema2pojo.SchemaStore;
+import org.jsonschema2pojo.SourceType;
+import org.jsonschema2pojo.rules.RuleFactory;
 
 import java.io.*;
+import java.net.URL;
 import java.util.Properties;
 
 public class Utils {
@@ -39,5 +52,10 @@ public class Utils {
         return js.get(key).toString();
 
     }
+
+
+
+
+
 
 }

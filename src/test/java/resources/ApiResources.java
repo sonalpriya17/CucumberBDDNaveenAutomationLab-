@@ -3,7 +3,9 @@ package resources;
 public enum ApiResources {
     addPlaceAPI("/maps/api/place/add/json"),
     getPlaceAPI("/maps/api/place/get/json"),
-    deletePlaceAPI("/maps/api/place/delete/json");
+    deletePlaceAPI("/maps/api/place/delete/json"),
+    //goRest("/public-api/users/123/posts");
+    goRestAPI("/public-api/users/123/posts");
     private String resource;
 
     ApiResources(String resource) {

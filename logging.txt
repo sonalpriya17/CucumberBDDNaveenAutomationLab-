@@ -1,5 +1,5 @@
-Request method:	POST
-Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Request method:	GET
+Request URI:	https://gorest.co.in/public-api/users/123/posts?key=qaclick123
 Proxy:			<none>
 Request params:	<none>
 Query params:	key=qaclick123
@@ -11,75 +11,201 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "accuracy": 50,
-    "name": "AAHouse",
-    "phone_number": "(+91) 983 893 3937",
-    "address": "WorldCrossCenter",
-    "website": "http://google.com",
-    "language": "English",
-    "location": {
-        "lat": -38.383494,
-        "lng": 33.427362
+    "place_id": "null"
+}
+HTTP/1.1 200 OK
+Server: nginx
+Date: Thu, 03 Jun 2021 21:11:12 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+ETag: W/"259e9b1e4191270cc68350155c5e86d2"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: b7a9ca07-ef1a-4e8f-91e7-5670881ccf67
+X-Runtime: 0.004971
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Vary: Origin
+X-Frame-Options: sameorigin
+Expect-CT: enforce; max-age=3600
+Content-Encoding: gzip
+
+{
+    "code": 200,
+    "meta": {
+        "pagination": {
+            "total": 24,
+            "pages": 2,
+            "page": 1,
+            "limit": 20
+        }
     },
-    "types": [
-        "shoe park",
-        "shop"
+    "data": [
+        {
+            "id": 107,
+            "user_id": 123,
+            "title": "Vulnus porro defigo tametsi curso decens aequitas voluptatem civitas sulum utroque cupressus eos attollo derelinquo.",
+            "body": "Aut thesaurus cotidie. Cohaero caput textus. Repudiandae sumo perspiciatis. Utilis thermae verus. Agnosco turpe arcesso. Voluptas sub clam. Sed tonsor conculco. Damno vulgivagus deserunt. Dedecor dolorum officiis. Reiciendis demergo colligo. Abstergo vesper officia. Turpe suppono combibo. Harum chirographum ubi. Degero defluo adficio. Caute thymum ancilla. Adfectus vereor non. Cenaculum sopor delego. Catena ut subvenio. Congregatio admoveo tepidus. Ago statua soleo. Decretum voco rem. Celebrer arbitro virtus. Autem acervus usque.",
+            "created_at": "2021-06-03T03:50:05.299+05:30",
+            "updated_at": "2021-06-03T03:50:05.299+05:30"
+        },
+        {
+            "id": 1336,
+            "user_id": 123,
+            "title": "luminous white",
+            "body": "checked",
+            "created_at": "2021-06-03T04:39:12.826+05:30",
+            "updated_at": "2021-06-03T04:39:12.826+05:30"
+        },
+        {
+            "id": 1337,
+            "user_id": 123,
+            "title": "luminous white",
+            "body": "checked",
+            "created_at": "2021-06-03T05:33:11.515+05:30",
+            "updated_at": "2021-06-03T05:33:11.515+05:30"
+        },
+        {
+            "id": 1338,
+            "user_id": 123,
+            "title": "luminous white",
+            "body": "checked",
+            "created_at": "2021-06-03T06:32:58.865+05:30",
+            "updated_at": "2021-06-03T06:32:58.865+05:30"
+        },
+        {
+            "id": 1339,
+            "user_id": 123,
+            "title": "luminous white",
+            "body": "checked",
+            "created_at": "2021-06-03T07:33:00.956+05:30",
+            "updated_at": "2021-06-03T07:33:00.956+05:30"
+        },
+        {
+            "id": 1342,
+            "user_id": 123,
+            "title": "luminous white",
+            "body": "checked",
+            "created_at": "2021-06-03T08:33:18.406+05:30",
+            "updated_at": "2021-06-03T08:33:18.406+05:30"
+        },
+        {
+            "id": 1344,
+            "user_id": 123,
+            "title": "luminous white",
+            "body": "checked",
+            "created_at": "2021-06-03T09:40:34.588+05:30",
+            "updated_at": "2021-06-03T09:40:34.588+05:30"
+        },
+        {
+            "id": 1345,
+            "user_id": 123,
+            "title": "luminous white",
+            "body": "checked",
+            "created_at": "2021-06-03T10:33:39.032+05:30",
+            "updated_at": "2021-06-03T10:33:39.032+05:30"
+        },
+        {
+            "id": 1346,
+            "user_id": 123,
+            "title": "luminous white",
+            "body": "checked",
+            "created_at": "2021-06-03T11:33:31.653+05:30",
+            "updated_at": "2021-06-03T11:33:31.653+05:30"
+        },
+        {
+            "id": 1347,
+            "user_id": 123,
+            "title": "luminous white",
+            "body": "checked",
+            "created_at": "2021-06-03T12:37:27.472+05:30",
+            "updated_at": "2021-06-03T12:37:27.472+05:30"
+        },
+        {
+            "id": 1348,
+            "user_id": 123,
+            "title": "luminous white",
+            "body": "checked",
+            "created_at": "2021-06-03T13:32:57.508+05:30",
+            "updated_at": "2021-06-03T13:32:57.508+05:30"
+        },
+        {
+            "id": 1350,
+            "user_id": 123,
+            "title": "luminous white",
+            "body": "checked",
+            "created_at": "2021-06-03T14:33:02.993+05:30",
+            "updated_at": "2021-06-03T14:33:02.993+05:30"
+        },
+        {
+            "id": 1351,
+            "user_id": 123,
+            "title": "luminous white",
+            "body": "checked",
+            "created_at": "2021-06-03T15:33:28.895+05:30",
+            "updated_at": "2021-06-03T15:33:28.895+05:30"
+        },
+        {
+            "id": 1353,
+            "user_id": 123,
+            "title": "luminous white",
+            "body": "checked",
+            "created_at": "2021-06-03T16:32:57.164+05:30",
+            "updated_at": "2021-06-03T16:32:57.164+05:30"
+        },
+        {
+            "id": 1357,
+            "user_id": 123,
+            "title": "luminous white",
+            "body": "checked",
+            "created_at": "2021-06-03T17:36:13.759+05:30",
+            "updated_at": "2021-06-03T17:36:13.759+05:30"
+        },
+        {
+            "id": 1358,
+            "user_id": 123,
+            "title": "luminous white",
+            "body": "checked",
+            "created_at": "2021-06-03T18:33:00.315+05:30",
+            "updated_at": "2021-06-03T18:33:00.315+05:30"
+        },
+        {
+            "id": 1360,
+            "user_id": 123,
+            "title": "luminous white",
+            "body": "checked",
+            "created_at": "2021-06-03T19:33:16.431+05:30",
+            "updated_at": "2021-06-03T19:33:16.431+05:30"
+        },
+        {
+            "id": 1361,
+            "user_id": 123,
+            "title": "luminous white",
+            "body": "checked",
+            "created_at": "2021-06-03T20:33:01.966+05:30",
+            "updated_at": "2021-06-03T20:33:01.966+05:30"
+        },
+        {
+            "id": 1362,
+            "user_id": 123,
+            "title": "luminous white",
+            "body": "checked",
+            "created_at": "2021-06-03T21:42:49.013+05:30",
+            "updated_at": "2021-06-03T21:42:49.013+05:30"
+        },
+        {
+            "id": 1363,
+            "user_id": 123,
+            "title": "luminous white",
+            "body": "checked",
+            "created_at": "2021-06-03T22:39:11.766+05:30",
+            "updated_at": "2021-06-03T22:39:11.766+05:30"
+        }
     ]
-}
-HTTP/1.1 200 OK
-Date: Sun, 30 May 2021 15:54:55 GMT
-Server: Apache/2.4.18 (Ubuntu)
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: POST
-Access-Control-Max-Age: 3600
-Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
-Content-Length: 194
-Keep-Alive: timeout=5, max=100
-Connection: Keep-Alive
-Content-Type: application/json;charset=UTF-8
-
-{
-    "status": "OK",
-    "place_id": "96f64f53a6b45ad0b3d12d57adf6e75d",
-    "scope": "APP",
-    "reference": "1706ead1a9e8887ff8af35290ea029151706ead1a9e8887ff8af35290ea02915",
-    "id": "1706ead1a9e8887ff8af35290ea02915"
-}
-Request method:	GET
-Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=96f64f53a6b45ad0b3d12d57adf6e75d
-Proxy:			<none>
-Request params:	<none>
-Query params:	key=qaclick123
-				place_id=96f64f53a6b45ad0b3d12d57adf6e75d
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 OK
-Date: Sun, 30 May 2021 15:54:56 GMT
-Server: Apache/2.4.18 (Ubuntu)
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: POST
-Access-Control-Max-Age: 3600
-Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
-Content-Length: 238
-Keep-Alive: timeout=5, max=100
-Connection: Keep-Alive
-Content-Type: application/json;charset=UTF-8
-
-{
-    "location": {
-        "latitude": "-38.383494",
-        "longitude": "33.427362"
-    },
-    "accuracy": "50",
-    "name": "AAHouse",
-    "phone_number": "(+91) 983 893 3937",
-    "address": "WorldCrossCenter",
-    "types": "shoe park,shop",
-    "website": "http://google.com",
-    "language": "English"
 }

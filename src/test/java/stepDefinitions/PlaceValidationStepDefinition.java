@@ -53,7 +53,9 @@ public class PlaceValidationStepDefinition extends Utils {
     @Then("^the \"([^\"]*)\" in response body is \"([^\"]*)\"$")
     public void the_in_response_body_is(String keyValue, String expectedValue) throws Throwable {
         System.out.println("the status in response body is OK");
+       // getJsonPath(response, keyValue);
         getJsonPath(response, keyValue);
+
         Assert.assertEquals(getJsonPath(response, keyValue), expectedValue);
 
     }
