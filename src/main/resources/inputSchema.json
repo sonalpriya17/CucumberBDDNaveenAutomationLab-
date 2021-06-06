@@ -1,0 +1,235 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "examples": [
+    {
+      "Message": "Number of Post office(s) found: 1",
+      "Status": "Success",
+      "PostOffice": [
+        {
+          "Name": "HSR Layout",
+          "Description": "",
+          "BranchType": "Sub Post Office",
+          "DeliveryStatus": "Delivery",
+          "Taluk": "Bangalore South",
+          "Circle": "Bangalore South",
+          "District": "Bangalore",
+          "Division": "Bangalore South",
+          "Region": "Bangalore HQ",
+          "State": "Karnataka",
+          "Country": "India"
+        }
+      ]
+    }
+  ],
+  "required": [
+    "Message",
+    "Status",
+    "PostOffice"
+  ],
+  "properties": {
+    "Message": {
+      "$id": "#/properties/Message",
+      "type": "string",
+      "title": "The Message schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "Number of Post office(s) found: 1"
+      ]
+    },
+    "Status": {
+      "$id": "#/properties/Status",
+      "type": "string",
+      "title": "The Status schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "Success"
+      ]
+    },
+    "PostOffice": {
+      "$id": "#/properties/PostOffice",
+      "type": "array",
+      "title": "The PostOffice schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "Name": "HSR Layout",
+            "Description": "",
+            "BranchType": "Sub Post Office",
+            "DeliveryStatus": "Delivery",
+            "Taluk": "Bangalore South",
+            "Circle": "Bangalore South",
+            "District": "Bangalore",
+            "Division": "Bangalore South",
+            "Region": "Bangalore HQ",
+            "State": "Karnataka",
+            "Country": "India"
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/PostOffice/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/PostOffice/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "Name": "HSR Layout",
+                "Description": "",
+                "BranchType": "Sub Post Office",
+                "DeliveryStatus": "Delivery",
+                "Taluk": "Bangalore South",
+                "Circle": "Bangalore South",
+                "District": "Bangalore",
+                "Division": "Bangalore South",
+                "Region": "Bangalore HQ",
+                "State": "Karnataka",
+                "Country": "India"
+              }
+            ],
+            "required": [
+              "Name",
+              "Description",
+              "BranchType",
+              "DeliveryStatus",
+              "Taluk",
+              "Circle",
+              "District",
+              "Division",
+              "Region",
+              "State",
+              "Country"
+            ],
+            "properties": {
+              "Name": {
+                "$id": "#/properties/PostOffice/items/anyOf/0/properties/Name",
+                "type": "string",
+                "title": "The Name schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "HSR Layout"
+                ]
+              },
+              "Description": {
+                "$id": "#/properties/PostOffice/items/anyOf/0/properties/Description",
+                "type": "string",
+                "title": "The Description schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  ""
+                ]
+              },
+              "BranchType": {
+                "$id": "#/properties/PostOffice/items/anyOf/0/properties/BranchType",
+                "type": "string",
+                "title": "The BranchType schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Sub Post Office"
+                ]
+              },
+              "DeliveryStatus": {
+                "$id": "#/properties/PostOffice/items/anyOf/0/properties/DeliveryStatus",
+                "type": "string",
+                "title": "The DeliveryStatus schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Delivery"
+                ]
+              },
+              "Taluk": {
+                "$id": "#/properties/PostOffice/items/anyOf/0/properties/Taluk",
+                "type": "string",
+                "title": "The Taluk schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Bangalore South"
+                ]
+              },
+              "Circle": {
+                "$id": "#/properties/PostOffice/items/anyOf/0/properties/Circle",
+                "type": "string",
+                "title": "The Circle schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Bangalore South"
+                ]
+              },
+              "District": {
+                "$id": "#/properties/PostOffice/items/anyOf/0/properties/District",
+                "type": "string",
+                "title": "The District schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Bangalore"
+                ]
+              },
+              "Division": {
+                "$id": "#/properties/PostOffice/items/anyOf/0/properties/Division",
+                "type": "string",
+                "title": "The Division schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Bangalore South"
+                ]
+              },
+              "Region": {
+                "$id": "#/properties/PostOffice/items/anyOf/0/properties/Region",
+                "type": "string",
+                "title": "The Region schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Bangalore HQ"
+                ]
+              },
+              "State": {
+                "$id": "#/properties/PostOffice/items/anyOf/0/properties/State",
+                "type": "string",
+                "title": "The State schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Karnataka"
+                ]
+              },
+              "Country": {
+                "$id": "#/properties/PostOffice/items/anyOf/0/properties/Country",
+                "type": "string",
+                "title": "The Country schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "India"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    }
+  },
+  "additionalProperties": true
+}
