@@ -15,7 +15,7 @@ public class SchemaValidator {
     public void validateJsonSchema(){
         ValidatableResponse res = get(url).then().assertThat().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("inputSchema.json"));
         res.toString();
-        //assertThat(res.toString(),matchesJsonSchemaInClasspath("inputSchema.json"));
+        assertThat(res.toString(),matchesJsonSchemaInClasspath("inputSchema.json"));
 
 
     }

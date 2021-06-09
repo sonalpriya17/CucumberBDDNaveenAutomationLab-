@@ -25,7 +25,7 @@ public class SampleStringResponse {
     public void validateJsonSchema() throws IOException {
         String jsonToBeValidated = sampleResponseWithoutArray();
         //matchesJsonSchema(jsonToBeValidated);
-        assertThat(jsonToBeValidated,matchesJsonSchemaInClasspath("./target/classes/inputSchema.json"));
+        assertThat(jsonToBeValidated,matchesJsonSchemaInClasspath("./target/classes/pojo/inputSchema.json"));
 
     }
 
