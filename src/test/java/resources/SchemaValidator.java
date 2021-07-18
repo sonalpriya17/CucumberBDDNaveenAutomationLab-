@@ -13,9 +13,11 @@ public class SchemaValidator {
     String url = "http://www.postalpincode.in/api/pincode/560102";
     @Test
     public void validateJsonSchema(){
+        ValidatableResponse resp = get(url).then().log().all();
+
         ValidatableResponse res = get(url).then().assertThat().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("inputSchema.json"));
-        res.toString();
-        assertThat(res.toString(),matchesJsonSchemaInClasspath("inputSchema.json"));
+
+        //assertThat(res.toString(),matchesJsonSchemaInClasspath("inputSchema.json"));
 
 
     }
